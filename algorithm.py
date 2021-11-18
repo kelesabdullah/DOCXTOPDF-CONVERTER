@@ -20,9 +20,9 @@ def converter():
         resultpath = resultpathway()
 
         docx2pdf.convert(targettedfile,resultpath)
-        messagebox.showinfo("DOCX2PDF CONVERTER",f"Belge kaydedildi.\nKaydedilen dizin: {resultpath}")
+        messagebox.showinfo("DOCX2PDF CONVERTER",f"File saved.\nSaved file path: {resultpath}")
     except Exception as e:
-        messagebox.showerror("Hata","Desteklenmeyen format.\nLütfen '.docx' uzantılı dosya seçtiğinizden emin olun.")
+        messagebox.showerror("Error","Unsupported format.\nplease make sure you have choosed .docx file. ")
 
 baslik = Label(app,text="EASY DOCX PDF CONVERTER",font ="arial 13 bold",bg="cyan").pack()
 
